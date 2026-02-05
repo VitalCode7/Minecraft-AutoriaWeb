@@ -23,7 +23,14 @@ li, a{
     font-weight: 700;
     font-size: 3rem;
 }
-
+table img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+.imagem{
+    margin-right: 1rem;
+}
 li a:hover{
     color: #e6dede;
 }
@@ -92,6 +99,9 @@ li a:hover{
     padding: 6rem 4rem;
     max-width: 50rem;
 }
+.nether main{
+    margin-top: 15rem;
+}
 
 body {
     background-color: #1a1a1a; /* Fundo escuro */
@@ -111,7 +121,7 @@ h2 {
 table {
     width: 80%;
     max-width: 800px;
-    border-collapse: collapse; /* Deixa as bordas finas e unidas */
+    border-collapse: collapse;
     background-color: #2d2d2d;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
@@ -158,23 +168,23 @@ body.geral {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Isso faz a imagem ficar parada enquanto o texto sobe */
+    background-attachment: fixed; 
 }
 
 /* O MENU */
 header {
-    position: fixed; /* Fixa no topo da tela */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.4); /* Uma sombra leve para o menu não sumir no fundo */
+    background-color: rgba(0, 0, 0, 0.4); 
 }
 
 ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem; /* Espaço interno do menu */
+    padding: 2rem; 
     gap: 8rem;
     list-style: none;
 }
