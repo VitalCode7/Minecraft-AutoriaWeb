@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Minecraft';
+    /* font-family: 'Minecraft'; */
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('./fonts/Minecraft.ttf'); /* O caminho onde o arquivo está */
+}
+
+/* GERAL */
+
+li, a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+li a:hover{
+    color: #e6dede;
+}
+
+/* LOGIN */
+.login main{
+    background-image: url('imagem/loginimg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login main form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 20px;
+    color: #013a02;
+    padding: 6rem 4rem;
+    background-color: #ffffff;
+    border: 1px solid #013a02;
+    border-radius: 2rem;
+}
+
+.overworld{
+    background-image: url('imagem/overworldimg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.nether{
+    background-image: url('imagem/netherimg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.end{
+    background-image: url('imagem/theendimg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.overworld main, .nether main, .end main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83.4rem;
+}   
+
+.overworld section, .nether section, .end section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 6rem 4rem;
+    max-width: 50rem;
+}
+
+body {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #ffcc00; /* Cor de Ouro */
+    text-shadow: 2px 2px #000;
+}
+
+table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse; /* Deixa as bordas finas e unidas */
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+th {
+    background-color: #4a332d; /* Marrom avermelhado */
+    color: #ffcc00;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 3px solid #ffcc00;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #444;
+}
+
+        /* Efeito zebrado: Linhas alternadas com fundo diferente */
+tbody tr:nth-child(even) {
+    background-color: #383838;
+}
+
+        /* Efeito de destaque ao passar o mouse */
+tbody tr:hover {
+    background-color: #444;
+    cursor: default;
+}
+
+.raridade {
+    font-weight: bold;
+    color: #ffaa00;
+}
+
+/* O CORPO DA PÁGINA */
+body.geral {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Minecraft', sans-serif;
+    
+    /* Configuração da Imagem de Fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso faz a imagem ficar parada enquanto o texto sobe */
+}
+
+/* O MENU */
+header {
+    position: fixed; /* Fixa no topo da tela */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4); /* Uma sombra leve para o menu não sumir no fundo */
+}
+
+ol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; /* Espaço interno do menu */
+    gap: 8rem;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* O CONTEÚDO PRINCIPAL (MAIN) */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 18rem; 
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section {
+    margin-top: 6rem; 
+    
+    max-width: 80rem;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2rem;
+    color: #ffffff;
+    font-size: 2.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+section p {
+    margin-bottom: 2rem;
+}
